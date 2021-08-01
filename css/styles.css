@@ -933,7 +933,7 @@ overflow: hidden;
   padding-bottom: 4px;
 }
 
-.label-oswiadczam {
+.label-policy {
 
   font-size: 14px;
   line-height: 1.666;
@@ -943,7 +943,7 @@ overflow: hidden;
 
 }
 
-.label-oswiadczam::before{
+.label-policy::before{
   content: "";
   display: inline-block; 
   width: 16px;
@@ -952,7 +952,7 @@ overflow: hidden;
   outline: 2px;
 }
 
-.label-oswiadczam:checked + .label-oswiadczam::before {
+.label-policy:checked + .label-policy::before {
 
   background-color: #2196F3;
   border-radius: 3px solid #fff;
