@@ -940,19 +940,31 @@ overflow: hidden;
   letter-spacing: 0.03em;
   color: var(--portfolio-list-subtitles);
 
-
 }
 
+.text, 
+.tel,
+.email,
+.feedback {
+
+  border: 1px solid #2196F3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/* !!!!!!!!!!!!!!!!!!Is it possible? How to do it? 
 .label-policy::before{
   content: "";
   display: inline-block; 
   width: 16px;
   height: 16px; 
-  background: #2196F3;
+  background-color: #2196F3;
   outline: 2px;
 }
 
-.label-policy:checked + .label-policy::before {
+
+
+.modal-form-policy:checked + .label-policy::before {
 
   background-color: #2196F3;
   border-radius: 3px solid #fff;
@@ -960,12 +972,15 @@ overflow: hidden;
 
 
 }
-
+*/
 .is-hidden .modal {
  /*transform: scale(0.8);*/
   transform: translate(-50%,-200%);
 }
  
+ 
+
+
 
 .close-btn {
 
@@ -1007,6 +1022,8 @@ overflow: hidden;
 
 }
 
+.user-name-input,
+
 .name-lab-input {
   
   display: flex; 
@@ -1027,6 +1044,21 @@ overflow: hidden;
   padding-left: 40px; 
   padding-right: 40px; 
   padding-top: 10px; 
+
+}
+
+.user-name-input:hover,
+.user-name-input:focus,
+.phone-number-input:hover,
+.phone-number-input:focus,
+.email-input:hover,
+.email-input:focus,
+.feedback-input:hover,
+.feedback-input:focus {
+
+  border: 1px solid #2196F3;
+  box-sizing: border-box;
+  border-radius: 4px;
 
 }
 
@@ -1066,7 +1098,7 @@ overflow: hidden;
 }
 
 [id=user_name],
-[id=user_tel],  
+[id=user_phone],  
 [id=email],
 [id=feedback] {
   border: 1px solid rgba(33, 33, 33, 0.2);
