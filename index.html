@@ -48,7 +48,7 @@
         <section class="hero-background">
             
             <div class="container">
-                <h1 class="hero-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+                <h1 class="hero-header">EFEKTYWNE ROZWIĄZANIA<br> DLA WASZEGO BIZNESU</h1>
                     <button class="modal-btn hero-button" type="button" data-modal-open="">Zamów usługę</button>
             </div>
         </section>
@@ -375,46 +375,91 @@
                                 <use href="./images/icons.svg#icon-linkedin">
                                 </use></svg></a></li>
             </div>
+            <div class="footer-news-data">
+                <div class="footer-newsletter">Zapisz się do newslettera</div>
+                    <div class="footer-mail-container"> 
+                        <form action="" class="footer_mail">
+                            <input type="email" placeholder="E-mail" class="footer-email-subscription">
+                        </form>
+                    
+                    <button type="submit" class="modal-hero-button">Zapisz się</button>
+                    </div>
+                </div>
+            </div>
+                
     </footer>
     <!--END FOOTER-->
     <div class="backdrop is-hidden " data-modal>
         <div class="modal modal-visual">
-            <button type="button" class="close-btn" data-modal-close>x</button>
-                <form name="signup_form_1" action="http://localhost:3000/posts" method="POST" autocomplete="on" novalidate>
-                        
-                    <ul class="main-form"> 
-                        <li class="form_1-header">
-                            <p class=" ">Zostaw swoje dane w formularzu poniżej</p></li>                 
+            <button type="button" class="close-btn" data-modal-close>
+                <span class="close-container">  
+                    <svg class="close-modal-btn">
+                        <use href="./images/icons.svg#icon-cross" width="11" height="11"></use>
+                    </svg>
+                </span>  
+            </button>
+                <span class="form_1-header">
+                                <p class="header_form">Zostaw swoje dane w formularzu poniżej</p> 
+                </span>
+                <!--FORM-->
+                <form class="modal-form" name="signup_form_1" action="http://localhost:3000/posts" method="POST" autocomplete="on" novalidate>
                              
-                                <li class="name-lab-input">
-                                    <label class="label-text label-text2" for="user_name">Imię</label>
-                                    <input class="user-name-input" type="text" name="unsername" id="user_name" /></li>
-                                
-                                <li class="tel-lab-input">
-                                    <label class="label-text label-text2" for="user_phone">Telefon</label>  
-                                    <input class="phone-number-input" type="tel" name="phone_number" id="user_phone" /></li>
-                                
-                                <li class="email-lab-input">
-                                    <label class="label-text label-text2" for="email">Email</label> 
-                                    <input class="email-input" type="email" name="email" id="email"/> </li>
-                                
-                                <li class="feedback-lab-textarea">
-                                    <label class="label-text label-text2" >Komentarz</label> 
-                                    <textarea class="feedback-input" name="feedback" rows="6" placeholder="Wprowadź tekst..." id="feedback" /></textarea></li>    
-                                    
+                        <label for="user_name" class="modal-label">Imię</label>
+                            <span class="input-item">
+                                <input id="user_name" type="text" class="input-items" name="name">
+                                <svg class="modal-icon" widh="18 " height="18 ">
+                                <use href="./images/icons.svg#icon-user"></use>
+                            </svg>
+                        </span>
+                        <label for="tel_name" class="modal-label">Telefon</label>
+                        <span class="input-item">
+                            <input id="user_name" type="text" class="input-items" name="name">
+                            <svg class="modal-icon" widh="18 " height="18 ">
+                                <use href="./images/icons.svg#icon-phone"></use>
+                            </svg>
+                        </span>
+                        <label for="email_name" class="modal-label">Email</label>
+                        <span class="input-item">
+                            <input id="user_name" type="text" class="input-items" name="name">
+                            <svg class="modal-icon" widh="18 " height="18 ">
+                                <use href="./images/icons.svg#icon-mail-envelope-closed"></use>
+                            </svg>
+                        </span>
+                        <label for="user_message" class="modal-label">Komentarz</label>
+                            <textarea id="user_message" class="input-items-message" name="message" rows="5" placeholder="Wprowadź tekst"></textarea>
+                                <span class="input-item-message">
+                                    <input type="checkbox" id="user_policy" name="policy" value="accept_policy" class="modal-policy-checker">
+                                </span>
+                                    <label for="user_policy" class="modal-label-message">
+                                    Oświadczam, iż akceptuję <a href="#" class="modal-link">Regulamin</a> i <a href="#" class="modal-link">Politykę
+                                        prywantości</a>
+                                    </label>
+                                <button type="submit" class="modal-hero-button">Wyślij</button>
 
-                                <li class="checkbox-label-href">
-                                    <input class="modal-form-policy" type="checkbox" name="policy" id="policy" />
-                                    <label class="label-policy" for="policy">Oświadczam iż akceptuję</label>
-                                    <span><a class="form-link" href="#">Regulamin</a></span> i 
-                                    <span><a class="form-link" href="#">Polityke Prywatności</a></span></li>   
-                                
-                                <li class="hero-button-main">
-                                    <button class="modal-btn hero-button-submit" type="submit">Wyślij</button></li>
                         
+             
 
-                    </ul>  
+
+
+
+
+                    
+                    
+                                            
+
+
+
+
+
+
+
+
+                    
                 
+
+
+                                               
+                <!--END FORM-->
                 </form>
                      
 

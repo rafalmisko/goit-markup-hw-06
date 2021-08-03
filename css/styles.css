@@ -336,6 +336,8 @@ ul {
   color: var(--main-color);
 }
 
+
+
 /*========== COMPONENTS ----> CONTAINS ALL COMPONENTS ==========*/
 
 /*========== FILTERS ==========*/
@@ -887,6 +889,64 @@ overflow: hidden;
   margin-right: 10px;
 }
 
+/*========== FOOTER NEWSLETTER ==========*/
+
+.footer-news-data {
+  
+
+}
+
+.footer-newsletter {
+   
+  padding-left: 78px; 
+  margin-top: 12px; 
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer-mail-container {
+
+  padding-left: 78px; 
+  margin-top: 20px; 
+}
+
+
+.footer-email-subscription {
+  display: flex;
+  align-items: center;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2F303A;
+  font-size: 16px;
+  line-height: 20px;
+  
+  letter-spacing: 0.03em;
+  padding-left: 15px; 
+  color: rgba(255, 255, 255, 0.6);
+
+}
+
+.footer-news-data .modal-hero-button   {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin-left: 10px; 
+   
+
+
+
+}
+
+
+/*========== END FOOTER NEWSLETTER ==========*/
 /*========== END FOOTER ==========*/
 
 /*========== MODAL WINDOW ==========*/
@@ -900,7 +960,6 @@ overflow: hidden;
     background-color: rgba(0,0,0,0.1);
 
 }
-
 
 .modal {
 	position: absolute;
@@ -916,72 +975,19 @@ overflow: hidden;
 
 }
  
-
-.label-text {
-
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: var(--portfolio-list-subtitles);
-  padding-top: 10px; 
-
-
-}
-
-.label-text2 {
-
-  padding-bottom: 4px;
-}
-
-.label-policy {
-
-  font-size: 14px;
-  line-height: 1.666;
-  letter-spacing: 0.03em;
-  color: var(--portfolio-list-subtitles);
-
-}
-
-.text, 
-.tel,
-.email,
-.feedback {
-
-  border: 1px solid #2196F3;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-/* !!!!!!!!!!!!!!!!!!Is it possible? How to do it? 
-.label-policy::before{
-  content: "";
-  display: inline-block; 
-  width: 16px;
-  height: 16px; 
-  background-color: #2196F3;
-  outline: 2px;
-}
-
-
-
-.modal-form-policy:checked + .label-policy::before {
-
-  background-color: #2196F3;
-  border-radius: 3px solid #fff;
-  background-image: url("../images/rectangle_check.svg");
-
-
-}
-*/
 .is-hidden .modal {
  /*transform: scale(0.8);*/
   transform: translate(-50%,-200%);
 }
  
+.is-hidden {
+	
+	opacity: 0;
+	visibility: hidden; 
+	pointer-events: none; 
+
+}
  
-
-
-
 .close-btn {
 
 	position: absolute;
@@ -997,22 +1003,21 @@ overflow: hidden;
 
 }
 
-.is-hidden {
-	
-	opacity: 0;
-	visibility: hidden; 
-	pointer-events: none; 
-
+.close-modal-btn {
+  position: absolute;
+  left: 9px; 
+  top: 9px; 
 }
 
-.main-form {
+/*========== MODAL WINDOW FORM, LABELS, INPUT ==========*/
+.modal-form {
   display: flex; 
   flex-direction: column;
 
 }
-.form_1-header {
-  
-  padding: 40px 40px 12px 40px; 
+.header_form {
+   
+  margin-top: 40px; 
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -1022,31 +1027,246 @@ overflow: hidden;
 
 }
 
-.user-name-input,
+.input-item {
+  position: relative; 
+  width: 100%;
+  height: 100%; 
 
-.name-lab-input {
+}
+
+.input-items {
   
-  display: flex; 
-  flex-direction: column; 
-  padding-left: 40px; 
-  padding-right: 40px; 
-  padding-top: 12px; 
+
+}
+
+.input-items {
+    width: 448px;
+    height: 40px;
+    margin-left: 40px; 
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+     
+   
+}
+
+.input-items-message {
+    width: 448px;
+    height: 120px;
+    margin-left: 40px; 
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+} 
+
+.input-item-message {
+
+  display: flex;
+  padding-left: 55px;
+
+  
+}
+
+.modal-icon {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
 }
 
+.modal-label {
+
+  font-size: 12px;
+  line-height: 1.666;
+  letter-spacing: 0.01em;
+  color: var(--portfolio-list-subtitles);
+  margin-top: 10px;
+  margin-left: 40px; 
+  margin-bottom: 4px;  
+
+
+}
+
+.modal-policy-checker {
+  position: relative;
+}
+
+.modal-label-message {
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.modal-label-message {
+  position: relative;   
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--portfolio-list-subtitles);
+  width: 395px;
+  margin-left: 77px;
+  margin-bottom: 30px;
+  
+
+
+
+
+}
+
+
+
+.modal-hero-button {
+  margin-left: auto;
+  margin-right: auto; 
+  margin-bottom: 40px; 
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.876;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: var(--second-color-logo);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ 
+
+}
+
+
+
+/*========== END MODAL WINDOW FORM, LABELS, INPUT ==========*/
+
+
+/*
+ 
+.label-policy::before{
+  content: "";
+  display: inline-block; 
+  width: 16px;
+  height: 16px; 
+  background-color: #2196F3;
+  outline: 2px;
+} */
+
+/* b.modal-form-policy:checked + .label-policy::before {
+
+  background-color: #2196F3;
+ order-radius: 3px solid #fff;
+  background-image: url("../images/rectangle_check.svg");
+  border: none; 
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+*/
+
+/*  
+.icon-form {
+
+  position: absolute;
+  left: 46px; 
+  top: 10px;
+  
+
+}
+*/
+
+/*  
+.user-name-conteiner {
+  position: relative; 
+  width: 448px;
+  height: 40px;
+  padding-left: 40px;
+
+}
+*/
+
+/*  
+.user-name-container-text {
+  position: relative; 
+  width: 448px;  
+  height: 120px; 
+  padding-left: 40px;
+    
+
+}
+*/
+
+/*  
+.user-name-input,
+.phone-number-input,
+.email-input
+  {
+  position: absolute; 
+  width: 100%;
+  height: 100%;  
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px; 
+   
+
+  }
+*/
+
+/*
+.feedback-input {
+  position: absolute;
+  width: 448px;   
+  height: 120px;  
+  padding-left: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px; 
+}
+  */
+
+  /*  
+.policy-container {
+  position: absolute;
+  padding-top: 20px; 
+  padding-left: 40px; 
+
+
+}
+*/
+
+/* 
+.submit-container {
+  position: absolute; 
+  padding-top: 40px; 
+  padding-bottom: 50px; 
+
+
+}
+ */
+/*  
+
+.name-lab-input,
 .tel-lab-input, 
 .email-lab-input,
 .feedback-lab-textarea  {
 
-  display: flex; 
+  /*display: flex; 
   flex-direction: column; 
   padding-left: 40px; 
   padding-right: 40px; 
   padding-top: 10px; 
 
 }
+ 
+*/
 
+/*  
 .user-name-input:hover,
 .user-name-input:focus,
 .phone-number-input:hover,
@@ -1061,13 +1281,22 @@ overflow: hidden;
   border-radius: 4px;
 
 }
+*/
+/*
+.modal-form-policy:checked +  
 
+  appearance:none;
+
+}
+*/
+
+/*  
 .checkbox-label-href {
 
   padding: 20px 55px 30px 55px; 
    
  }
-
+*/
 /*
 #user_name, #user_tel, #email, #feedback {
 
@@ -1078,6 +1307,8 @@ overflow: hidden;
 
 }
 */
+
+/*
 .form-link {
 
   font-size: 14px;
@@ -1096,6 +1327,9 @@ overflow: hidden;
 
 
 }
+
+*/ 
+/*
 
 [id=user_name],
 [id=user_phone],  
@@ -1126,36 +1360,9 @@ overflow: hidden;
   background-image: url("../images/icons.svg#icon-user");
 
  }
+*/
 
-
-
- .hero-button-main {
-
-  display: flex;
-  align-content: center; 
-  justify-content: center; 
-  padding-bottom: 40px;  
-
-} 
-
-.hero-button-submit {
-   
-  width: 200px;
-  height: 50px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.876;
-  letter-spacing: 0.06em;
-  color: #FFFFFF;
-  background-color: var(--second-color-logo);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border-style: none;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  
-
-}
 
  
 
