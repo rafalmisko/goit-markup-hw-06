@@ -1042,6 +1042,14 @@ overflow: hidden;
    
 }
 
+.input-items:hover, 
+.input-items:focus {
+
+  border: 1px solid #2196F3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
 .input-items-message {
     width: 100%;
     padding: 16px; 
@@ -1061,19 +1069,15 @@ overflow: hidden;
 
    padding-top: 20px; 
 
-
-
 } 
-
 
 .modal-icon {
   position: absolute;
   top: 14px;
   left: 15px;
-   
+  }
 
 
-}
 
 .modal-label {
   
@@ -1110,6 +1114,11 @@ overflow: hidden;
 
 
 }
+
+
+
+
+
 .modal-hero-button {
   margin-left: auto;
   margin-right: auto; 
@@ -1160,101 +1169,14 @@ overflow: hidden;
 }
 */
 
-/*  
-.icon-form {
-
-  position: absolute;
-  left: 46px; 
-  top: 10px;
-  
-
-}
-*/
-
-/*  
-.user-name-conteiner {
-  position: relative; 
-  width: 448px;
-  height: 40px;
-  padding-left: 40px;
-
-}
-*/
-
-/*  
-.user-name-container-text {
-  position: relative; 
-  width: 448px;  
-  height: 120px; 
-  padding-left: 40px;
-    
-
-}
-*/
-
-/*  
-.user-name-input,
-.phone-number-input,
-.email-input
-  {
-  position: absolute; 
-  width: 100%;
-  height: 100%;  
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px; 
-   
-
-  }
-*/
-
-/*
-.feedback-input {
-  position: absolute;
-  width: 448px;   
-  height: 120px;  
-  padding-left: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px; 
-}
-  */
-
-  /*  
-.policy-container {
-  position: absolute;
-  padding-top: 20px; 
-  padding-left: 40px; 
-
-
-}
-*/
-
-/* 
-.submit-container {
-  position: absolute; 
-  padding-top: 40px; 
-  padding-bottom: 50px; 
-
-
-}
- */
-/*  
-
-.name-lab-input,
-.tel-lab-input, 
-.email-lab-input,
-.feedback-lab-textarea  {
-
-  /*display: flex; 
-  flex-direction: column; 
-  padding-left: 40px; 
-  padding-right: 40px; 
-  padding-top: 10px; 
-
-}
  
-*/
+
+ 
+
+ 
+ 
+ 
+ 
 
 /*  
 .user-name-input:hover,
