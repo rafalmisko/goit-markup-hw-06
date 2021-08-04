@@ -1108,9 +1108,26 @@ overflow: hidden;
 
 .modal-policy-checker {
   position: relative;
+  
 }
 
- 
+.modal-link {
+
+  color: var(--second-color-logo); 
+
+}
+
+.modal-policy-checker::before { 
+    display: inline-block;
+    content: "";
+    height:15px;
+    width: 16px;
+    border: 3px solid;
+    border-radius: 3px;
+    border-color:var(--main-color); 
+  
+  }
+
 
 .modal-label-message {
   position: relative;   
@@ -1124,18 +1141,14 @@ overflow: hidden;
 
 }
 
-.modal-link {
-
-  color: var(--second-color-logo); 
 
 
-}
 
-.modal-form-policy:checked + .label-policy::before {
+.modal-policy-checker:checked + .modal-label-message::before {
 
   background-color: #2196F3;
- order-radius: 3px solid #fff;
-  background-image: url("../images/rectangle_check.svg");
+  border-radius: 3px solid #fff;
+  background-image: url("./images/rectangle_check.svg");
   border: none; 
   background-repeat: no-repeat;
   background-position: center;
