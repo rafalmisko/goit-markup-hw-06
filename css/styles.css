@@ -891,10 +891,7 @@ overflow: hidden;
 
 /*========== FOOTER NEWSLETTER ==========*/
 
-.footer-news-data {
-  
-
-}
+ 
 
 .footer-newsletter {
    
@@ -1134,9 +1131,16 @@ overflow: hidden;
 
 }
 
+.modal-form-policy:checked + .label-policy::before {
 
+  background-color: #2196F3;
+ order-radius: 3px solid #fff;
+  background-image: url("../images/rectangle_check.svg");
+  border: none; 
+  background-repeat: no-repeat;
+  background-position: center;
 
-
+}
 
 .modal-hero-button {
   margin-left: auto;
