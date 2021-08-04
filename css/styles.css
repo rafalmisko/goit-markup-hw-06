@@ -966,7 +966,8 @@ overflow: hidden;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%) scale(1);
-	width: 528px; 
+	/*width: 528px;*/
+  padding: 40px;  
 	min-height: 581px;
 	background-color: #ffffff; 
   transition: transform 1s ease-out;
@@ -1016,8 +1017,6 @@ overflow: hidden;
 
 }
 .header_form {
-   
-  margin-top: 40px; 
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -1029,20 +1028,14 @@ overflow: hidden;
 
 .input-item {
   position: relative; 
-  width: 100%;
-  height: 100%; 
+   
 
 }
-
+ 
 .input-items {
-  
-
-}
-
-.input-items {
-    width: 448px;
-    height: 40px;
-    margin-left: 40px; 
+    
+    width: 100%;
+    padding: 12px 42px; 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
      
@@ -1050,44 +1043,46 @@ overflow: hidden;
 }
 
 .input-items-message {
-    width: 448px;
-    height: 120px;
-    margin-left: 40px; 
+    width: 100%;
+    padding: 16px; 
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);  
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+} 
+ .input-item-message {
+
+   padding-top: 20px; 
+
+
 
 } 
 
-.input-item-message {
-
-  display: flex;
-  padding-left: 55px;
-
-  
-}
 
 .modal-icon {
   position: absolute;
   top: 14px;
   left: 15px;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
 
 
 }
 
 .modal-label {
-
+  
   font-size: 12px;
   line-height: 1.666;
   letter-spacing: 0.01em;
   color: var(--portfolio-list-subtitles);
   margin-top: 10px;
-  margin-left: 40px; 
   margin-bottom: 4px;  
-
 
 }
 
@@ -1095,12 +1090,7 @@ overflow: hidden;
   position: relative;
 }
 
-.modal-label-message {
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
+ 
 
 .modal-label-message {
   position: relative;   
@@ -1108,22 +1098,15 @@ overflow: hidden;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--portfolio-list-subtitles);
-  width: 395px;
-  margin-left: 77px;
   margin-bottom: 30px;
-  
-
-
+  padding-left: 8px; 
 
 
 }
-
-
-
 .modal-hero-button {
   margin-left: auto;
   margin-right: auto; 
-  margin-bottom: 40px; 
+  margin-top: 30px; 
   width: 200px;
   height: 50px;
   font-weight: 700;

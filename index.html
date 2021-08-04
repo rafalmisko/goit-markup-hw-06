@@ -398,42 +398,42 @@
                     </svg>
                 </span>  
             </button>
-                <span class="form_1-header">
-                                <p class="header_form">Zostaw swoje dane w formularzu poniżej</p> 
-                </span>
+                <h2 class="form_1-header">
+                    <p class="header_form">Zostaw swoje dane w formularzu poniżej</p> 
+                </h2>
                 <!--FORM-->
                 <form class="modal-form" name="signup_form_1" action="http://localhost:3000/posts" method="POST" autocomplete="on" novalidate>
                              
                         <label for="user_name" class="modal-label">Imię</label>
                             <span class="input-item">
                                 <input id="user_name" type="text" class="input-items" name="name">
-                                <svg class="modal-icon" widh="18 " height="18 ">
+                                <svg class="modal-icon" width="18" height="18">
                                 <use href="./images/icons.svg#icon-user"></use>
                             </svg>
                         </span>
                         <label for="tel_name" class="modal-label">Telefon</label>
                         <span class="input-item">
                             <input id="user_name" type="text" class="input-items" name="name">
-                            <svg class="modal-icon" widh="18 " height="18 ">
+                            <svg class="modal-icon" width="18 " height="18">
                                 <use href="./images/icons.svg#icon-phone"></use>
                             </svg>
                         </span>
                         <label for="email_name" class="modal-label">Email</label>
                         <span class="input-item">
                             <input id="user_name" type="text" class="input-items" name="name">
-                            <svg class="modal-icon" widh="18 " height="18 ">
+                            <svg class="modal-icon" width="18" height="18">
                                 <use href="./images/icons.svg#icon-mail-envelope-closed"></use>
                             </svg>
                         </span>
                         <label for="user_message" class="modal-label">Komentarz</label>
                             <textarea id="user_message" class="input-items-message" name="message" rows="5" placeholder="Wprowadź tekst"></textarea>
                                 <span class="input-item-message">
-                                    <input type="checkbox" id="user_policy" name="policy" value="accept_policy" class="modal-policy-checker">
+                                        <input type="checkbox" id="user_policy" name="policy" value="accept_policy" class="modal-policy-checker">
+                                            <label for="user_policy" class="modal-label-message">
+                                            Oświadczam, iż akceptuję <a href="#" class="modal-link">Regulamin</a> i <a href="#" class="modal-link">Politykę
+                                                prywantości</a>
+                                            </label>
                                 </span>
-                                    <label for="user_policy" class="modal-label-message">
-                                    Oświadczam, iż akceptuję <a href="#" class="modal-link">Regulamin</a> i <a href="#" class="modal-link">Politykę
-                                        prywantości</a>
-                                    </label>
                                 <button type="submit" class="modal-hero-button">Wyślij</button>
 
                         
