@@ -1103,6 +1103,13 @@ overflow: hidden;
 
 
 }
+
+.modal-link {
+
+  color: var(--second-color-logo); 
+
+
+}
 .modal-hero-button {
   margin-left: auto;
   margin-right: auto; 
