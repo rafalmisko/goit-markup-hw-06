@@ -1145,10 +1145,12 @@ overflow: hidden;
 
 .modal-label-message::before { 
     display: inline-block;
+    vertical-align: middle;
     appearance: none; 
     content: "";
     height: 15px;
     width: 16px;
+    margin-right: 8px; 
     border: 3px solid;
     border-radius: 3px;
     border-color:var(--main-color); 
