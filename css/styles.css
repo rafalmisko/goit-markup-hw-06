@@ -1174,9 +1174,8 @@ overflow: hidden;
 
 .modal-hero-button {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center; 
-   
   margin-right: 12px;       
   margin-top: 20px; 
   width: 200px;
