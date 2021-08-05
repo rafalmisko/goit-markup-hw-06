@@ -1051,8 +1051,10 @@ overflow: hidden;
    
 }
   
-.input-item:hover .modal-icon,  
-.input-item:focus .modal-icon  {
+.input-item:hover + .modal-icon,  
+.input-item:focus + .modal-icon
+
+  {
 
 
    fill: var(--second-color-logo);    
@@ -1063,7 +1065,12 @@ overflow: hidden;
    
 }
 
+#user_name:focus + .modal-icon {
 
+  fill: var(--second-color-logo);    
+   color: var(--second-color-logo); 
+
+}
 
  
 .input-items-message {
