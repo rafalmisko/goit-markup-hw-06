@@ -1037,10 +1037,9 @@ overflow: hidden;
    
 }
 
- 
 .input-items:hover, 
 .input-items:focus  {
-   outline: none; 
+   outline: none;   
    fill: var(--second-color-logo);   
    color: var(--second-color-logo); 
    border: 1px solid #2196F3;
@@ -1051,10 +1050,9 @@ overflow: hidden;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    
 }
-
- 
-.input-item:hover > .modal-icon,  
-.input-item:focus > .modal-icon  {
+  
+.input-item:hover .modal-icon,  
+.input-item:focus .modal-icon  {
 
 
    fill: var(--second-color-logo);    
@@ -1064,6 +1062,8 @@ overflow: hidden;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    
 }
+
+
 
  
 .input-items-message {
@@ -1079,8 +1079,18 @@ overflow: hidden;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+         
 } 
+
+.input-items-message:hover,
+.input-items-message:focus
+   {
+     
+    fill: var(--second-color-logo);   
+    border: 1px solid #2196F3;
+     
+}
+
  .input-item-message {
 
    padding-top: 20px; 
@@ -1105,12 +1115,7 @@ overflow: hidden;
   margin-bottom: 4px;  
 
 }
-
-.modal-policy-checker {
-  position: relative;
-  
-}
-
+ 
 .modal-link {
 
   color: var(--second-color-logo); 
@@ -1156,8 +1161,7 @@ overflow: hidden;
 
 
 .icon-send-footer {
-   
-    
+  
   fill: var(--logo-footer-light);
 }
 
@@ -1187,15 +1191,9 @@ overflow: hidden;
 
 }
 
-.visually-hidden {
-  position: absolute !important; 
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);  
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden; 
+.visually-hidden { 
+
+    appearance: none; 
 
 } 
 /*========== END MODAL WINDOW FORM, LABELS, INPUT ==========*/
