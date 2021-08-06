@@ -1160,7 +1160,7 @@ overflow: hidden;
 
 .modal-policy-checker:checked + .modal-label-message::before {
 
-  background-color: #2196F3;
+  background-color: var(--second-color-logo);
   border-radius: 3px solid #fff;
   background-image: url("../images/rectangle_check.svg");
   border: none; 
