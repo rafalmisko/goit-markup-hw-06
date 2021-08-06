@@ -999,10 +999,16 @@ overflow: hidden;
 
 }
 
-.close-modal-btn {
-  position: absolute;
-  left: 9px; 
-  top: 9px; 
+ 
+
+/*svg*/
+.modal-icon-close {
+
+  position:absolute;
+  left:9px;
+  top:9px;
+
+
 }
 
 /*========== MODAL WINDOW FORM, LABELS, INPUT ==========*/
@@ -1105,6 +1111,7 @@ overflow: hidden;
    padding-top: 20px; 
 
 } 
+
 
 .modal-icon {
   position: absolute;
